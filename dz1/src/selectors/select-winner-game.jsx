@@ -1,0 +1,1 @@
+export const selectWinnerGame = (state) => state.winnerGame;

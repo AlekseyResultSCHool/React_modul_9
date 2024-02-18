@@ -1,0 +1,1 @@
+export const selectMove = (state) => state.move;

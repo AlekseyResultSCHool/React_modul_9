@@ -1,0 +1,47 @@
+.container {
+	border: 1px solid black;
+	width: 500px;
+    height: 650px;
+    margin:50px auto;
+	user-select: none;
+}
+
+.cencel, .cencelLight {
+    margin:auto 190px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.cencelLight {
+    opacity: .2;
+}
+
+.field {
+	width: 450px;
+    height: 450px;
+    margin:30px auto; 
+}
+
+.fields, .fieldsLight {
+    border: 1px solid black;
+	width: 150px;
+    height: 150px;
+    background: tan;
+    text-align: center;
+    color: green;
+    font: bold 70px comic sans ms;
+    line-height: 150px;
+    cursor: pointer;
+    float: left; 
+    box-sizing: border-box; 
+} 
+
+.fields:hover {
+    background: rgb(186, 182, 182);
+    transition: .3s all ease;
+}
+
+.fieldsLight {
+    opacity: .3;
+}
+

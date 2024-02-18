@@ -1,0 +1,60 @@
+.container {
+    width: 700px;
+    height: 700px;
+    counter-reset: li; 
+    list-style: none; 
+    font: 20px "Trebuchet MS", "Lucida Sans";
+    padding: 10px;
+    text-shadow: 0 1px 0 var(--text-shadow-color);   
+    text-indent: 6px;
+    border: 4px solid black;
+}
+
+.container a {
+    position: relative; 
+    display: block;
+    padding: .5em .4em .5em 2em; 
+    margin: .5em 0;
+    background: var(--link-background); 
+    color: var(--text-color);
+    text-decoration: none;
+    border-radius: .3em;
+    transition: .3s ease-out;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.container a:hover:before {
+    transform: rotate(360deg);
+}
+
+.container a:before {
+    content: counter(li);
+    counter-increment: li;
+    position: absolute;
+    left: -0.4em;
+    top: 50%;
+    margin-top: -1.3em;
+    background: var(--circle-background);
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    border: .3em solid var(--border-color);
+    text-align: center;
+    font-weight: bold;
+    border-radius: 2em;
+    transition: all .3s ease-out;
+}
+
+:root {
+    --text-shadow-color: rgba(255, 255, 255, 0.5);
+    --link-background: #DAD2CA;
+    --text-color: #444;
+    --circle-background: #8FD4C1;
+    --border-color: #ffffff;
+}
+
+body {
+    padding: 30px;
+}

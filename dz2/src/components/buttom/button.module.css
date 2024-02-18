@@ -1,0 +1,14 @@
+.button {
+    width: 152px;
+    height: 33px;
+    font-size: 17px;
+    margin: 10px;
+    margin-top: 20px;
+    margin-left: 13px;
+    border-radius: 10px;
+}
+
+/* .buttonSort {
+    border: 3px solid blue;
+    background: rgb(149, 141, 141);
+} */
